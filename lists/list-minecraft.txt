@@ -1,0 +1,12 @@
+hypixel.net
+mc.hypixel.net
+mc.hypixel.fast
+overlagfreev2.hypixel.net.cn
+overlagfreev1.hypixel.net.cn
+5.101.216.38
+mr-b01.tm-azurefd.net
+195.208.209.7
+msk-ix.cloudflare.com
+172.68.8.51
+172.65.197.160
+172.65.188.114
