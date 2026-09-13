@@ -181,3 +181,5 @@ zapret.wiki
 zlibrary.to
 znanija.com
 ooni.org
+modrinth.com
+virustotal.com
