@@ -183,3 +183,5 @@ znanija.com
 ooni.org
 modrinth.com
 virustotal.com
+meteoraddons.com
+godbolt.org
