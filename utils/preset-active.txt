@@ -89,7 +89,7 @@
 
 --filter-l7=discord,stun
 --payload=stun,discord_ip_discovery
---lua-desync=fake:blob=fake_default_udp:repeats=6
+--lua-desync=fake:blob=quic_google:repeats=6
 
 --new
 
@@ -132,13 +132,14 @@
 --hostlist=lists/twitter.txt
 --hostlist=lists/whatsapp.txt
 --out-range=-d10
---lua-desync=fake:blob=tls_google:tls_mod=rnd,dupsid,sni=www.google.com:tcp_ts=-600000
---lua-desync=hostfakesplit:host=www.google.com:tcp_ts=-600000
+--lua-desync=fake:blob=tls_google:repeats=6:tcp_ts=-600000
+--lua-desync=fakedsplit:pattern=0x00:repeats=6:tcp_ts=-600000
 
 --new
 
 --filter-tcp=80,443
 --hostlist=lists/youtube.txt
+--hostlist=lists/github.txt
 --payload=tls_client_hello
 --lua-desync=fake:blob=fake_default_tls:badsum:tls_mod=rnd,dupsid,sni=rzd.ru:repeats=8
 --lua-desync=multidisorder:pos=1,sniext+1,host+1,midsld-2,midsld,midsld+2,endhost-1
